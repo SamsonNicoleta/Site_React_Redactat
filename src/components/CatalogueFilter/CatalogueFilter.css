@@ -1,0 +1,93 @@
+.search-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.input {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.search-label {
+    margin-right: 19px;
+}
+.search-input {
+    border: 0;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.3);
+    margin-right: 83px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.filter-title {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.filter-cards {
+    display: flex;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 23px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: transparent;
+    height: 30px;
+}
+
+.filer-card {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-right: 1px;
+    background: #ffffff;
+    box-shadow: 0 5px 23px rgba(0, 0, 0, 0.3);
+    font-family: 'Merienda', cursive;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    padding: 7px 20px;
+    transition-duration: 0.25s;
+
+}
+
+.filer-card:last-child {
+    margin-right: 0;
+}
+
+.filter-selected {
+    background-color: #604a38;
+    color: white;
+}
+
+@media screen and (max-width: 1000px){
+    .search-panel {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+    .search-input {
+        margin: 0;
+    }
+}

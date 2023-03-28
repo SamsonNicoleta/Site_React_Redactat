@@ -1,0 +1,28 @@
+.about-us-article {
+    background-color: white;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1000px){
+    .about-us-article {
+        margin-top: 100px;
+    }
+
+    .text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+}

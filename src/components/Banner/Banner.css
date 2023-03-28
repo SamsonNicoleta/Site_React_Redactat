@@ -1,0 +1,93 @@
+body {
+    background-image: url(../../../public/background.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Merienda', cursive;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.container {
+    width: 50%;
+    margin: 8% auto 14%;
+}
+
+.container-title {
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+}
+
+
+.more-btn {
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: 'Merienda', cursive;
+    font-size: 14px;
+    background: transparent;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-pos {
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1000px){
+
+    body {
+        background-size: auto;
+    }
+
+    .container-title {
+        font-size: 30px;
+    }
+    
+    .container-sub-title {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-top: 70px;
+        margin-bottom: 200px;
+        height: 250px;
+    }
+
+    .more-btn {
+        width: 148px;
+        height: 37px;
+    }
+
+    .btn-pos {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    
+}
