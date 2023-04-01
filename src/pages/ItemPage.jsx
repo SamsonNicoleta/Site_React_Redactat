@@ -2,10 +2,11 @@ import React from "react";
 import HeadTittle from "../components/HeadTittle/HeadTittle";
 import {ItemDescription} from "../components/itemDescription/itemDescription";
 import {useLocation} from "react-router-dom";
+import AddToCartButton from "../components/AddToCartButton/AddToCartButton";
 
 
 const ItemPage = () => {
-    const {image, heading, country, price, description,card} = useLocation().state;
+    const {image, heading, country, price, description,card,addToCartButton} = useLocation().state;
 
     return (
         <>
@@ -16,6 +17,7 @@ const ItemPage = () => {
                 country={country}
                 description={description}
                 price={price}
+                addToCartButton={<AddToCartButton />}
                 card={card}
             />
         </>

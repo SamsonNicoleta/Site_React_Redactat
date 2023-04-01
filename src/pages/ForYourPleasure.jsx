@@ -4,6 +4,7 @@ import HeadTittle from "../components/HeadTittle/HeadTittle";
 import {CatalogueItems} from "../components/CatalogueItems/CatalogueItems";
 
 
+
 class ForYourPleasure extends Component {
     constructor(props) {
         super(props);
@@ -54,6 +55,7 @@ class ForYourPleasure extends Component {
             ],
         };
     }
+
 
     render() {
         const hrStyle = {

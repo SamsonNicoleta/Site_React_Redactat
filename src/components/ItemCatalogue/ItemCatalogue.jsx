@@ -5,20 +5,29 @@ import CatalogueFilter from "../CatalogueFilter/CatalogueFilter";
 import {CatalogueItems} from "../CatalogueItems/CatalogueItems";
 import PropTypes from "prop-types";
 
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
+
 class ItemCatalogue extends Component {
 
     render() {
         return (
             <>
                 <section className="coffee-catalogue">
-                    <CatalogueFilter itemsData={this.props.itemsData} 
+                    <CatalogueFilter itemsData={this.props.itemsData}
                         search={this.props.search}
                         toggleFilter={this.props.toggleFilter}
                     />
-                    <CatalogueItems itemsData={this.props.itemsData}/>
+                    <CatalogueItems
+                        itemsData={this.props.itemsData}
+                        addToCartButton={<AddToCartButton />}
+                    />
+
                 </section>
+
+
             </>
         );
+
     }
 }
 
