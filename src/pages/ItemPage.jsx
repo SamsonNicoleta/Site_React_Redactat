@@ -5,7 +5,7 @@ import {useLocation} from "react-router-dom";
 
 
 const ItemPage = () => {
-    const {image, heading, country, price, description} = useLocation().state;
+    const {image, heading, country, price, description,card} = useLocation().state;
 
     return (
         <>
@@ -16,6 +16,7 @@ const ItemPage = () => {
                 country={country}
                 description={description}
                 price={price}
+                card={card}
             />
         </>
 
