@@ -65,5 +65,5 @@ ItemDescription.propTypes = {
     country: PropTypes.string,
     description: PropTypes.string,
     price: PropTypes.string,
-   // cart: PropTypes.object.isRequired,
+    cart: PropTypes.object.isRequired,
 };

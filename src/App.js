@@ -6,6 +6,7 @@ import OurCoffee from "./pages/OurCoffee";
 import Navigation from "./components/Navigation/Navigation";
 import ItemPage from "./pages/ItemPage";
 
+
 class App extends React.Component {
     render() {
         return (
@@ -17,6 +18,7 @@ class App extends React.Component {
                         <Route path={"/forYourPleasure"} element={<ForYourPleasure/>}/>
                         <Route path={"/itemPage"} element={<ItemPage/>}/>
                         <Route path={"/CartPage"} element={<ItemPage/>}/>
+
                     </Route>
                 </Routes>
             </>
