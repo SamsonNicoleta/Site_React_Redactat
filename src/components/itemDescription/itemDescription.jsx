@@ -2,9 +2,31 @@ import React from "react";
 import "./itemDescription.css";
 import PropTypes from "prop-types";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
-
+import Cart from "../Cart/Cart";
 export class ItemDescription extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            cart: [],
+        };
+    }
+    addToCart = () => {
+        const { id, heading, price } = this.props.product;
+        const itemInCart = this.props.cart.find((item) => item.id === id);
+        if (itemInCart) {
+            itemInCart.quantity += 1;
+        } else {
+            this.props.setCart([
+                ...this.props.cart,
+                {
+                    id,
+                    heading,
+                    price,
+                    quantity: 1,
+                },
+            ]);
+        }
+    };
 
 
 
@@ -29,7 +51,7 @@ export class ItemDescription extends React.Component {
                         <p>
                             <b>Pret:</b> {this.props.price}
                         </p>
-                        <AddToCartButton product={this.props.card} />
+                        <AddToCartButton product={this.props.addToCart} />
                     </article>
                 </section>
             </>
@@ -43,5 +65,5 @@ ItemDescription.propTypes = {
     country: PropTypes.string,
     description: PropTypes.string,
     price: PropTypes.string,
-    card: PropTypes.object.isRequired,
+   // cart: PropTypes.object.isRequired,
 };
